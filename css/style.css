@@ -18,3 +18,45 @@ main {
 footer {
     height: var(--footer-height)
 }
+
+/* USER */
+
+.users__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.users__card > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.users__card {
+    flex-basis: calc(100%/7);
+    height: 150px;
+    background-color: gray;
+    margin: 3px;
+}
+
+.user__name {
+    position: relative;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 0.2rem;
+    color: white;
+    font-size: 13px;
+}
+
+/* CONTROLS */
+.control_area {
+    height: var(--footer-height);
+}
+
+.controls__list > li {
+    margin: 0 10px;
+}
