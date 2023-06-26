@@ -1,0 +1,20 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+
+    --header-height: 40px;
+    --footer-height: 70px;
+}
+
+/* GENERICS */
+header {
+    height: var(--header-height);
+    text-align: end;
+}
+
+main {
+    height: calc(100vh - var(--footer-height) - var(--header-height));
+}
+
+footer {
+    height: var(--footer-height)
+}
